@@ -36,12 +36,14 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
 ### Database
+1. Start the docker image
+`docker-compose up --build` 
 
-1. Execute the create-database.sh file:
+2. Execute the create-database.sh file:
 `bash scripts/create-database.sh`
 
-2. Create a file .env with database URL and password. Replace $DB_USER and $DB_PASSWORD with the actual db username and password
+3. Create a file .env with database URL and password. Replace $DB_USER and $DB_PASSWORD with the actual db username and password
 `DATABASE_URL="mysql://$DB_USER:$DB_PASSWORD@localhost:3308/journal_app"`
 
-3. Execute the `prisma migrate` command
+4. Execute the `prisma migrate` command
 `npx prisma migrate dev --name init` 
