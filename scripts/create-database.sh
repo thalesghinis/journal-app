@@ -1,0 +1,1 @@
+docker exec -it mysql-journal-app mysql -uroot -psecret -e "create database if not exists journal_app;"

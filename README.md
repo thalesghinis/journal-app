@@ -34,3 +34,17 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+### Database
+1. Start the docker image
+`docker-compose up --build` 
+
+2. Execute the create-database.sh file:
+`bash scripts/create-database.sh`
+
+3. Create a file .env with database URL and password. Replace $DB_USER and $DB_PASSWORD with the actual db username and password
+`DATABASE_URL="mysql://$DB_USER:$DB_PASSWORD@localhost:3308/journal_app"`
+
+4. Execute the `prisma migrate` command
+`cd prisma`
+`npx prisma migrate reset` 
