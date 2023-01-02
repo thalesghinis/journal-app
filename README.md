@@ -46,4 +46,5 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 `DATABASE_URL="mysql://$DB_USER:$DB_PASSWORD@localhost:3308/journal_app"`
 
 4. Execute the `prisma migrate` command
-`npx prisma migrate dev --name init` 
+`cd prisma`
+`npx prisma migrate reset` 

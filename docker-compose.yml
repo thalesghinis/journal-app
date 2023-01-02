@@ -1,5 +1,6 @@
 services:
  mysql:
+    container_name: mysql-journal-app
     image: mysql/mysql-server:8.0
     volumes:
         - ./docker-entrypoint-initdb.d/:/docker-entrypoint-initdb.d/
