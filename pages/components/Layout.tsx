@@ -16,7 +16,8 @@ export default function Layout({children} : ChildrenProps){
             <title>Journal App</title>
         </Head>
          <Navbar/>
-         <main>{children}</main>         
+         <main>{children}</main>   
+         <Footer/>      
         </>
     )
 }

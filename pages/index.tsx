@@ -8,11 +8,11 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
   return (
     <>
-        <div className={styles.linha}>
-          <div className={styles.coluna_50}>
+        <div className={styles.line}>
+          <div className={styles.column_50}>
             <Image src='/images/Cores_principais.png' width={900} height={900} alt="Ornamento da tela"/>
           </div>
-          <div className={styles.coluna_50}>
+          <div className={styles.column_50}>
             <div className={styles.journal_app}>
               <h1>Journal App</h1>
               <p>lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem</p>

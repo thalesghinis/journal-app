@@ -19,6 +19,7 @@ export default function Navbar(){
                 <li>
                     <Link legacyBehavior href="/"><a>Teste</a></Link>
                 </li>
+                
             </ul>
         </nav>
     )
