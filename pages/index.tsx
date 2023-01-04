@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
-import Buttons from './components/Buttons'
+import Button from './components/Button'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,8 +19,8 @@ export default function Home() {
               <h1>Journal App</h1>
               <p>lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem</p>
               <div className={styles.btn_component}>
-                <Buttons>Sign Up</Buttons>
-                <Buttons>Sign In</Buttons>
+                <Button>Sign Up</Button>
+                <Button>Sign In</Button>
               </div>
             </div>
           </div>
@@ -28,11 +28,11 @@ export default function Home() {
       </div>
       <div className={styles.container}>
         <div className={styles.line}>
-          <div className={`${styles.column_50} ${styles.how_works}`}>
+          <div className={`${styles.column_50} ${styles.aligned}`}>
             <h2>Journal App</h2>
             <p>lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem</p>
           </div>
-          <div className={`${styles.column_50} ${styles.how_works}`}>
+          <div className={`${styles.column_50} ${styles.aligned}`}>
           <h2>Journal App</h2>
             <p>lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem</p>
           </div>
