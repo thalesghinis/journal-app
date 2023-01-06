@@ -1,51 +1,60 @@
-/*.container_1{
-    position: relative;
-}*/
-
-.line{
-    display: flex;
+.bg_color{
     background-color: #e7f5fe;
 }
 
-.column_50{
-    width: 50%;
-}
-
-.column_50 img{
-    width: auto;
-    height: auto;
-    position:relative;
-    left: 0px;
-    transform: translateX(-30%)
+/*First Container*/
+.image{
+    transform: translateX(-30%);
+    max-width: none;
 }
 
 .journal{
-    position: absolute;
-    top: 30%;
-    left: 55%;
-    margin: -25px 0 0 -25px;
-    max-width: 520px;
+    max-width: 550px;
+    margin: 0 auto;
 }
 
 .journal h1{
-    font-weight: bold;
     color: #03395d;
     letter-spacing: 5px;
-    font-size: 5em;
 }
 
 .journal p{
     color: #03395d;
-    font-size: 1.6em;
 }
 
 .btn_component{
-    display: flex;
     gap: 20px;
 }
 
+/*Media - first container*/
+@media(min-width: 960px){
+    .journal p{
+        font-size: 1.6em;
+    }
+}
+
+@media(max-width: 959px){
+    .journal{
+        text-align: center;
+    }
+}
+
+@media(max-width: 768px){
+    .journal h1{
+        font-size: 4rem;
+    }
+}
+
+@media(max-width: 576px){
+    .journal h1{
+        font-size: 3rem;
+    }
+}
+/*End of First Container*/
+
+
+/*Second Container*/
 .aligned{
-    text-align: center;
     color: #03395d;
     width: 30%;
     margin: 15em auto;
@@ -57,5 +66,4 @@
 
 .aligned p{
     margin-top: 1em;
-    font-size: 1.5em;
 }

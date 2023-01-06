@@ -15,10 +15,10 @@ export default function Layout({children} : ChildrenProps){
         <>
         <Head>
             <title>Journal App</title>
+            <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"/>
         </Head>
          <Navbar/>
-         <main>{children}</main>   
-         <Footer/>      
+         <main>{children}</main>  
         </>
     )
 }

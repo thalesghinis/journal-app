@@ -16,3 +16,9 @@
     background-color: #03395d;
     color: white;
 }
+
+@media(max-width: 959px){
+    .button{
+        width: 70%;
+    }
+}

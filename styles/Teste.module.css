@@ -1,0 +1,52 @@
+.bg_color{
+    background-color: #e7f5fe;
+}
+
+.image{
+    width: 100%;
+    height: 100%;
+    transform: translateX(-30%)
+}
+
+.journal{
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+.journal h1{
+    color: #03395d;
+    letter-spacing: 5px;
+}
+
+.journal p{
+    color: #03395d;
+}
+
+.btn_component{
+    gap: 20px;
+}
+
+@media(min-width: 960px){
+    .journal p{
+        font-size: 1.6em;
+    }
+}
+
+@media(max-width: 959px){
+    .journal{
+        text-align: center;
+    }
+}
+
+@media(max-width: 768px){
+    .journal h1{
+        font-size: 4rem;
+    }
+}
+
+@media(max-width: 576px){
+    .journal h1{
+        font-size: 3rem;
+    }
+}
+
