@@ -1,4 +1,6 @@
-.button{
+import styled from "styled-components";
+
+export const StyledButton = styled.button`
     font-size: 16px;
     padding: 14px;
     width: 100%;
@@ -10,15 +12,15 @@
     font-weight: bold;
     transition: .6s;
     margin-top: 40px;
-}
 
-.button:hover{
-    background-color: #03395d;
-    color: white;
-}
-
-@media(max-width: 959px){
-    .button{
-        width: 70%;
+    &:hover{
+        background-color: #03395d;
+        color: white;
     }
+
+    @media(max-width: 959px){
+        button{
+            width: 70%;
+        }
 }
+`
