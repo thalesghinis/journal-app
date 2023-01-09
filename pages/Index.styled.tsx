@@ -50,7 +50,22 @@ export const StyledJournal = styled.div`
 export const StyledAligned = styled.div`
     color: #03395d;
     width: 30%;
-    margin: 15em auto;
+    margin: 15em auto 0;
+
+    h2{
+        font-size: 2.4em;
+    }
+
+    p{
+        margin-top: 1em;
+    }
+`
+
+export const StyledAlignedTwo = styled.div`
+    color: #03395d;
+    width: 30%;
+    margin: 15em auto 0;
+    padding-bottom: 15em;
 
     h2{
         font-size: 2.4em;

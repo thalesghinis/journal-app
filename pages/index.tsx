@@ -1,7 +1,7 @@
 import styles from '../styles/Home.module.css'
 import Button from './components/button/Button'
 
-import { StyledBgColor, StyledImage, StyledJournal, StyledAligned } from "./Index.styled";
+import { StyledBgColor, StyledImage, StyledJournal, StyledAligned, StyledAlignedTwo } from "./Index.styled";
 
 
 export default function Home() {
@@ -27,10 +27,10 @@ export default function Home() {
             <h2>Journal App</h2>
             <p className='f3'>lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem</p>
           </StyledAligned>
-          <StyledAligned className="tc">
+          <StyledAlignedTwo className="tc">
             <h2>Journal App</h2>
             <p className='f3'>lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem</p>
-          </StyledAligned>
+          </StyledAlignedTwo>
         </div>
       </StyledBgColor>
     </>
