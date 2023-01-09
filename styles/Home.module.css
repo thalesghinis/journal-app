@@ -1,13 +1,4 @@
-.bg_color{
-    background-color: #e7f5fe;
-}
-
 /*First Container*/
-.image{
-    transform: translateX(-30%);
-    max-width: none;
-}
-
 .journal{
     max-width: 550px;
     margin: 0 auto;

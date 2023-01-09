@@ -2,18 +2,20 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 
-import styles from '../../styles/Navbar.module.css';
+
+import { StyledHeader, StyledNavbar } from "./Navbar.styled";
+import React from "react";
 
 
 export default function Navbar(){
     return(
-        <header className={styles.header}>
+        <StyledHeader>
             <p><span className="b">J</span></p>
 
-            <input type="checkbox" id="menu_bar" className={styles.menu}/>
-            <label htmlFor="menu_bar"><FontAwesomeIcon icon={faBars} className={styles.icon}></FontAwesomeIcon></label>
+            <input type="checkbox" id="menu_bar"/>
+            <label htmlFor="menu_bar"><FontAwesomeIcon icon={faBars}></FontAwesomeIcon></label>
 
-            <nav className={styles.navbar}>
+            <StyledNavbar>
                 <ul>
                     <li>
                         <Link legacyBehavior href="/"><a>Teste</a></Link>
@@ -25,7 +27,7 @@ export default function Navbar(){
                         <Link legacyBehavior href="/"><a>Teste</a></Link>
                     </li>
                 </ul>
-            </nav>
-        </header>
+            </StyledNavbar>
+        </StyledHeader>
     )
 }
