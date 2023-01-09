@@ -1,3 +1,4 @@
+import React from 'react';
 import styles from '../styles/Home.module.css'
 import Button from './components/button/Button'
 
@@ -16,8 +17,8 @@ export default function Home() {
             <h1 className='bold f-5'>Journal App</h1>
             <p className='f3-m f4'>Isso é um teste Isso é um teste Isso é um teste Isso é um teste Isso é um teste Isso é um teste Isso é um teste</p>
             <div className={[styles.btn_component, "flex-l"].join(" ")}>
-              <Button>Sign Up</Button>
-              <Button>Sign In</Button>
+              <Button buttonName="a"/>
+              <Button buttonName="asdad"/>
             </div>
           </StyledJournal>
         </div>

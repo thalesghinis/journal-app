@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Footer from "./footer/Footer";
 import Navbar from "../components/navbar/Navbar";
+import React from "react";
 
 
 type ChildrenProps = {
