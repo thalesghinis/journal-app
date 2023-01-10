@@ -9,24 +9,24 @@ import React from "react";
 
 export default function Navbar(){
     return(
-        <StyledHeader>
+        <StyledHeader className="header relative flex items-center justify-between">
             <p><span className="b">J</span></p>
 
-            <input type="checkbox" id="menu_bar"/>
-            <label htmlFor="menu_bar">
+            <input type="checkbox" id="menu_bar" className="dn"/>
+            <label htmlFor="menu_bar" className="dn">
                 <FontAwesomeIcon icon={faBars}></FontAwesomeIcon>
             </label>
 
-            <StyledNavbar>
-                <ul>
-                    <li>
-                        <Link legacyBehavior href="/"><a>Teste</a></Link>
+            <StyledNavbar className="navbar ttc">
+                <ul className="list">
+                    <li className="relative fl">
+                        <Link legacyBehavior href="/"><a className="b db no-underline">Teste</a></Link>
                     </li>
-                    <li>
-                        <Link legacyBehavior href="/"><a>Teste</a></Link>
+                    <li className="relative fl">
+                        <Link legacyBehavior href="/"><a className="b db no-underline">Teste</a></Link>
                     </li>
-                    <li>
-                        <Link legacyBehavior href="/"><a>Teste</a></Link>
+                    <li className="relative fl">
+                        <Link legacyBehavior href="/"><a className="b db no-underline">Teste</a></Link>
                     </li>
                 </ul>
             </StyledNavbar>
