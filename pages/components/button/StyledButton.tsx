@@ -18,9 +18,9 @@ import styled from 'styled-components';
         color: white;
     }
 
-    @media(max-width: 959px){
+    /*@media(max-width: 959px){
         button{
             width: 70%;
         }
-}
+}*/
 `

@@ -1,8 +1,7 @@
 import React from 'react';
-import styles from '../styles/Home.module.css'
 import Button from './components/button/Button'
 
-import { StyledBgColor, StyledImage, StyledJournal, StyledAligned, StyledAlignedTwo } from "./Index.styled";
+import { StyledBgColor, StyledImage, StyledJournal, StyledAligned } from "./Index.styled";
 
 
 export default function Home() {
@@ -13,10 +12,10 @@ export default function Home() {
           <div className="fl-l w-100 w-50-l pa2">
             <StyledImage className="dn db-l mw-none" src='/images/ornamento.png' width={807} height={454} alt="Ornamento da tela" />
           </div>
-          <StyledJournal className="fl-l w-100 w-50-l pa2">
+          <StyledJournal className="fl-l w-100 w-50-l pa2 journal">
             <h1 className='bold f-5'>Journal App</h1>
             <p className='f3-m f4'>Isso é um teste Isso é um teste Isso é um teste Isso é um teste Isso é um teste Isso é um teste Isso é um teste</p>
-            <div className={[styles.btn_component, "flex-l"].join(" ")}>
+            <div className="flex-l btn_component">
               <Button buttonName="a"/>
               <Button buttonName="asdad"/>
             </div>
@@ -24,14 +23,14 @@ export default function Home() {
         </div>
 
         <div className="flex-l">
-          <StyledAligned className="tc">
+          <StyledAligned className="tc w-50 w-30-l">
             <h2>Journal App</h2>
             <p className='f3'>lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem</p>
           </StyledAligned>
-          <StyledAlignedTwo className="tc">
+          <StyledAligned className="tc pb7 w-50 w-30-l">
             <h2>Journal App</h2>
-            <p className='f3'>lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem</p>
-          </StyledAlignedTwo>
+            <p className='f3 '>lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem</p>
+          </StyledAligned>
         </div>
       </StyledBgColor>
     </>

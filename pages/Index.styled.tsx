@@ -20,52 +20,14 @@ export const StyledJournal = styled.div`
         color: #03395d;
     }
 
-    button{
+    .btn_component{
         gap: 20px;
-    }
-
-    @media(min-width:960px){
-        p{
-            font-size: 1.6rem;
-        }
-    }
-
-    @media(max-width:959px){
-        text-align: center;
-    }
-
-    @media(max-width:768px){
-        h1{
-            font-size: 4rem;
-        }
-    }
-
-    @media(max-width:576px){
-        h1{
-            font-size: 3rem;
-        }
     }
 `
 
 export const StyledAligned = styled.div`
     color: #03395d;
-    width: 30%;
-    margin: 15em auto 0;
-
-    h2{
-        font-size: 2.4em;
-    }
-
-    p{
-        margin-top: 1em;
-    }
-`
-
-export const StyledAlignedTwo = styled.div`
-    color: #03395d;
-    width: 30%;
-    margin: 15em auto 0;
-    padding-bottom: 15em;
+    margin: 16em auto 0;
 
     h2{
         font-size: 2.4em;
