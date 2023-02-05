@@ -13,7 +13,7 @@ export default async function handler(
   const { email, password } = req.query;
 
   if (!email  || !password) {
-    // TODO Change this
+    // TODO Modify API spec with error and message. We need individual error messages per field.
     return res.status(300).json({error: 'Invalid parameters'})
   }
   

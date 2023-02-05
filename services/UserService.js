@@ -5,10 +5,7 @@ const saltRounds = 10;
 
 const createHash = (password) => {
     const salt = bcrypt.genSaltSync(saltRounds);
-    const hash = bcrypt.hashSync(password, salt);
-
-    console.log(hash);
-    return hash;
+    return bcrypt.hashSync(password, salt);
 }
 
 /**
@@ -50,6 +47,8 @@ export const findUserWithEmail = async (userEmail) => {
 }
 
 export const createUser = async (userEmail, userPassword) => {
+
+    // TODO: Modify user to use guid instead of auto increment ID field
     return await prisma.user.create({
         data: {
             email: userEmail,
