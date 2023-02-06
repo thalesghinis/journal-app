@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+body {
+  min-height: 100vh;
+}
+
 @media(max-width:959px) {
   .header label {
     display: initial;
