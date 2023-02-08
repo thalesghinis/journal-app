@@ -22,11 +22,6 @@ export default function Home() {
             </div>
           </StyledJournal>
         </div>
-
-        <button onClick={() => {
-          signIn()
-        }}>login</button>
-
         <div className="flex-l">
           <StyledAligned className="tc w-50 w-30-l">
             <h2>Journal App</h2>

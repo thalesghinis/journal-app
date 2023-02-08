@@ -1,6 +1,8 @@
 import { NextPage } from "next";
 import { FormEventHandler, useState } from "react";
 import { signIn } from "next-auth/react";
+import Button from "../components/button/Button";
+import { StyledForm, StyledH1, StyledInput } from "../../styles/globals";
 
 interface Props {}
 
@@ -19,10 +21,10 @@ const SignIn: NextPage = (props): JSX.Element => {
       console.log(res);
     };
     return (
-      <div className="sign-in-form">
-        <form onSubmit={handleSubmit}>
-          <h1>Login</h1>
-          <input
+      <div className="formContainer">
+        <StyledForm onSubmit={handleSubmit}>
+          <StyledH1>Login</StyledH1>
+          <StyledInput
             value={userInfo.email}
             onChange={({ target }) =>
               setUserInfo({ ...userInfo, email: target.value })
@@ -30,7 +32,7 @@ const SignIn: NextPage = (props): JSX.Element => {
             type="email"
             placeholder="john@email.com"
           />
-          <input
+          <StyledInput
             value={userInfo.password}
             onChange={({ target }) =>
               setUserInfo({ ...userInfo, password: target.value })
@@ -38,8 +40,8 @@ const SignIn: NextPage = (props): JSX.Element => {
             type="password"
             placeholder="********"
           />
-          <input type="submit" value="Login" />
-        </form>
+          <Button buttonName="Login" />
+        </StyledForm>
       </div>
     );
   };

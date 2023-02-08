@@ -2,6 +2,7 @@ import { NextPage } from "next";
 import { useSession } from "next-auth/react";
 import Router from "next/router";
 import { useEffect } from "react";
+import Dashboard from "./dashboard";
 
 const Protected: NextPage = (): JSX.Element => {
   const { status, data } = useSession();
@@ -13,8 +14,7 @@ const Protected: NextPage = (): JSX.Element => {
   if (status === "authenticated")
     return (
       <div>
-        This page is Protected for special people. like{"\n"}
-        {JSON.stringify(data.user, null, 2)}
+        <Dashboard />
       </div>
     );
 
@@ -22,3 +22,5 @@ const Protected: NextPage = (): JSX.Element => {
 };
 
 export default Protected;
+
+// {JSON.stringify(data.user, null, 2)}
