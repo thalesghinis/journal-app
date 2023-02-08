@@ -19,8 +19,12 @@ export default function Layout({children} : ChildrenProps){
             <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"/>
         </Head>
          <Navbar/>
-         <main>{children}</main>  
+         <div style={{minHeight: '80vh', position: 'relative'}}>
+            <main>{children}</main>
+         </div>
          <Footer/>
         </>
     )
 }
+
+// <main>{children}</main>  //

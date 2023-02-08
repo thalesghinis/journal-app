@@ -12,6 +12,7 @@ import styled from 'styled-components';
     font-weight: bold;
     transition: .6s;
     margin-top: 40px;
+    max-width: 188px;
 
     &:hover{
         background-color: #03395d;

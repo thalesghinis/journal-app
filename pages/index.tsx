@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from './components/button/Button'
+import { signIn } from 'next-auth/react'
 
 import { StyledBgColor, StyledImage, StyledJournal, StyledAligned } from "./Index.styled";
 
@@ -21,7 +22,6 @@ export default function Home() {
             </div>
           </StyledJournal>
         </div>
-
         <div className="flex-l">
           <StyledAligned className="tc w-50 w-30-l">
             <h2>Journal App</h2>

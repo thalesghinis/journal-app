@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
+import { signIn } from 'next-auth/react'
 
 
 import { StyledHeader, StyledNavbar } from "./StyledNavbar";
@@ -26,7 +27,10 @@ export default function Navbar(){
                         <Link legacyBehavior href="/"><a className="b db no-underline">Teste</a></Link>
                     </li>
                     <li className="relative fl">
-                        <Link legacyBehavior href="/"><a className="b db no-underline">Teste</a></Link>
+                    <button onClick={() => {
+          signIn()
+        }}>login</button>
+
                     </li>
                 </ul>
             </StyledNavbar>
