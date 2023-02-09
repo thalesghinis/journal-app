@@ -1,6 +1,7 @@
 import Head from "next/head";
-import Footer from "./Footer";
-import Navbar from "./Navbar";
+import Footer from "./footer/Footer";
+import Navbar from "../components/navbar/Navbar";
+import React from "react";
 
 
 type ChildrenProps = {
@@ -16,9 +17,17 @@ export default function Layout({children} : ChildrenProps){
         <Head>
             <title>Journal App</title>
             <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"/>
+            <link rel="preconnect" href="https://fonts.googleapis.com"/>
+            <link rel="preconnect" href="https://fonts.gstatic.com"  />
+            <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;800&display=swap" rel="stylesheet"/>
         </Head>
          <Navbar/>
-         <main>{children}</main>  
+         <div style={{minHeight: '80vh', position: 'relative'}}>
+            <main>{children}</main>
+         </div>
+         <Footer/>
         </>
     )
 }
+
+// <main>{children}</main>  //
