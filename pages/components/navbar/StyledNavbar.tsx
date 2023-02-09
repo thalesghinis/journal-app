@@ -1,15 +1,11 @@
 import styled from "styled-components";
 
 export const StyledHeader = styled.header`
-    /*top: 0;
-    left: 0;
-    right: 0;*/
-    background-color: #e7f5fe;
     padding: 0 7em;
     z-index: 1000;
     color: #03395d;
     
-    span{
+    span {
         font-size: 5em;
     }
 
@@ -26,7 +22,7 @@ export const StyledNavbar = styled.ul`
     }
 
     li a{
-        font-size: 1.5em;
+        font-size: 1em;
         padding: 5px;
         color: #03395d;
         transition: .4s;
@@ -34,6 +30,7 @@ export const StyledNavbar = styled.ul`
     }
 
     li a:hover{
-        border-color: #03395d;
+        opacity: 0.4;
+        transition: .3s;
     }
 `

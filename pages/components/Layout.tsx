@@ -17,6 +17,9 @@ export default function Layout({children} : ChildrenProps){
         <Head>
             <title>Journal App</title>
             <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"/>
+            <link rel="preconnect" href="https://fonts.googleapis.com"/>
+            <link rel="preconnect" href="https://fonts.gstatic.com"  />
+            <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;800&display=swap" rel="stylesheet"/>
         </Head>
          <Navbar/>
          <div style={{minHeight: '80vh', position: 'relative'}}>

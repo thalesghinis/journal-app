@@ -11,7 +11,9 @@ import React from "react";
 export default function Navbar(){
     return(
         <StyledHeader className="header relative flex items-center justify-between">
-            <p><span className="b">J</span></p>
+            <p>
+                <span className="b">J</span>
+            </p>
 
             <input type="checkbox" id="menu_bar" className="dn"/>
             <label htmlFor="menu_bar" className="dn">
@@ -28,9 +30,8 @@ export default function Navbar(){
                     </li>
                     <li className="relative fl">
                     <button onClick={() => {
-          signIn()
-        }}>login</button>
-
+                        signIn()
+                    }}>login</button>
                     </li>
                 </ul>
             </StyledNavbar>
