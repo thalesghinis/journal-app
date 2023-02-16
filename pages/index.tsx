@@ -1,7 +1,5 @@
 import React from 'react';
 import Button from './components/button/Button'
-import { signIn } from 'next-auth/react'
-
 import { StyledBgColor, StyledImage, StyledJournal, StyledAligned, StyledMain } from "./StyledIndex";
 
 // <StyledImage className="dn db-l mw-none" src='/images/ornamento.png' width={807} height={454} alt="Ornamento da tela" />

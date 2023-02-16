@@ -6,8 +6,9 @@ export const StyledInput = styled.input`
     padding: 5px;
     border: 1px gray solid;
     margin-top: 15px;
-    border: none;
-`
+    border: 1px solid;
+    margin-bottom: 15px;
+    `
 
 export const StyledForm = styled.form`
     justify-content: center;
@@ -16,10 +17,19 @@ export const StyledForm = styled.form`
     flex-direction: column;
     margin: 0 auto;
     width: 100%;
-    padding: 275px;
+    padding: 100px;
 `
 
 export const StyledH1 = styled.h1`
     font-size: 18px;
     text-align: center;
+`
+
+
+export const StyledLabel = styled.label`
+    font-size: 14px;
+    font-weight: bold;
+`
+
+export const StyledFlexStart = styled.div`
 `

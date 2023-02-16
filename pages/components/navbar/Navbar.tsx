@@ -2,8 +2,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import { signIn } from 'next-auth/react'
-
-
 import { StyledHeader, StyledNavbar } from "./StyledNavbar";
 import React from "react";
 
