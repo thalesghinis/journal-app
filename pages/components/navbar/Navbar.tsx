@@ -23,7 +23,7 @@ export default function Navbar(){
             <StyledNavbar className="navbar ttc">
                 <ul className="list">
                     <li className="relative fl">
-                        <Link legacyBehavior href="/"><a className="b db no-underline">Teste</a></Link>
+                        <Link legacyBehavior href="/features"><a className="b db no-underline">Features</a></Link>
                     </li>
                     <li className="relative fl">
                         <Link legacyBehavior href="/"><a className="b db no-underline">Teste</a></Link>
