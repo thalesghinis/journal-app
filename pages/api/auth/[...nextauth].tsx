@@ -1,5 +1,7 @@
+import axios from "axios";
 import NextAuth, {NextAuthOptions} from "next-auth";
 import CredentialsProvider from 'next-auth/providers/credentials'
+import { findUser } from "../../../services/UserService";
 
 const authOptions: NextAuthOptions = {
     session: {
@@ -9,20 +11,16 @@ const authOptions: NextAuthOptions = {
         CredentialsProvider({
           type: "credentials",
           credentials: {},
-          authorize(credentials, req) {
+          async authorize(credentials, req) {
                 const {email, password} = credentials as {
                     email: string;
                     password: string;
                 };
-                // lógica do login
-                if(email !== 'thales@gmail.com' || password !=='123') {
-
-                    throw new Error('Credencias inválidas')
-                }
-
-              // tudo ok  
-              return {id: '1234', name:  'Thales', emails: 'thales@gmail.com'}
+                const user = await findUser(email, password)
+                return user;
             },
+            
+       
         }),
     ],
     pages: {

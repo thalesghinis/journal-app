@@ -46,13 +46,14 @@ export const findUserWithEmail = async (userEmail) => {
     return user;
 }
 
-export const createUser = async (userEmail, userPassword) => {
+export const createUser = async (userEmail, userPassword, userName) => {
 
     // TODO: Modify user to use guid instead of auto increment ID field
     return await prisma.user.create({
         data: {
             email: userEmail,
             password: createHash(userPassword),
+            name: userName,
         }
     });
 }
