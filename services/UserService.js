@@ -57,3 +57,13 @@ export const createUser = async (userEmail, userPassword, userName) => {
         }
     });
 }
+
+export const sendText = async (text) => {
+
+    // TODO: Modify user to use guid instead of auto increment ID field
+    return await prisma.user.create({
+        data: {
+            text: setText,
+        }
+    });
+}
