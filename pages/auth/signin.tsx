@@ -31,9 +31,10 @@ const SignIn: NextPage = (props: any): JSX.Element => {
   
       if (res && res.ok) {
         if(router.query.callbackUrl) {
-          router.push(router.query.callbackUrl as string)
+         // router.push(router.query.callbackUrl as string)
+         router.push('/protected')
         } else {
-          router.push('/protected')
+        //  router.push('/protected')
         }
       }  else {
        setHasError('Esse usuário não existe')

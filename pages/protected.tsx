@@ -18,6 +18,8 @@ const Protected: NextPage = (): JSX.Element => {
       </div>
     );
 
+ 
+
   return <div>loading</div>;
 };
 
