@@ -19,7 +19,7 @@ export const StyledContent = styled.div`
     width:90%;
 `
 
-export const StyledText = styled.p`
+export const StyledText = styled.form`
     color: white;
     font-weight: bold;
     text-align: center;
