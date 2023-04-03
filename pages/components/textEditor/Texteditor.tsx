@@ -17,20 +17,16 @@ const Editor = () => {
     setContent(newContent);
   };
 
-  function name() {
-    var sayName = 'olá tatá'
-    console.log(sayName)
-    return true;
-  }
+  console.log(content, 'text')
 
-  console.log(name());
-  console.log(name());
-  console.log(name());
-
-  // console.log(content, 'text')
-
-  const sendText = async () => {
-    
+  const sendText = async ( /*e: { preventDefault: any; } */) => {
+    try {
+      const url = '/api/journalentry';
+      const response = await axios.post(url, data);
+      console.log(response.data);
+    } catch (error) {
+      console.error(error);
+    }
   };  
   return (
     <>
