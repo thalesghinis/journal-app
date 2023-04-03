@@ -11,7 +11,7 @@ export default async function handler(
   res: NextApiResponse
 ) {  
   console.log(req.body, 'teste')
- /* const { text } = req.body;
+  /*const { text } = req.body;
 
   if (!text) {
     return res.status(300).json({error: 'Vc não digitou nada'})
@@ -21,7 +21,8 @@ export default async function handler(
   console.log(typedText);
   
   typedText = await sendText(text);
-  res.status(200).json({typedText}) */
+  res.status(200).json({typedText}) 
+  */
 }
 
 

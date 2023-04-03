@@ -5,16 +5,37 @@ import React from "react";
 
 // type Props = React.DetailedHTMLProps<React.ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>;
 
-export default function Button ({ buttonName }: {buttonName: string}) {
+type ButtonProps = {
+    buttonName: string; 
+    handleClick: () => void;
+}
+
+const Button: React.FunctionComponent<ButtonProps> = ({ buttonName, handleClick }) => (
+    <StyledButton
+      onClick={handleClick}
+    >
+      {buttonName}
+    </StyledButton>
+  );
+  
+export default Button;
+
+
+/*
+export default function Button ({ buttonName, handleClick }: {buttonName: string}) {
     return(
-        <StyledButton>{buttonName}</StyledButton>
+        <StyledButton type="button" onClick={handleClick}>{buttonName}</StyledButton>
     )
 }
 
 Button.propTypes = {
-    buttonName: PropTypes.element.isRequired
+    buttonName: PropTypes.element.isRequired,
+    handleClick: PropTypes.element.isRequired
 };
 
 type Button = {
     buttonName: string; 
+    handleClick: button;
 }
+
+*/

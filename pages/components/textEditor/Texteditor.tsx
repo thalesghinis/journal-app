@@ -1,24 +1,42 @@
-import React, {useState, useRef, useMemo} from 'react';
-import JoditEditor from "jodit-react";
 
-const TextEditor = ({ setValue, config } : { setValue: any, config: any}) => {
-    const editor = useRef(null)
-    const [content, setContent] = useState({text: ''})
+import React, { useRef, useState, useMemo } from 'react'
+import JoditEditor from 'jodit-react'
+import button from 'antd/es/button'
+import axios from 'axios'
+import Button from '../button/Button'
 
-    const textContent = {
-        text: content.text
-    }
+const Editor = () => {
+  const editor = useRef(null)
+  const [content, setContent] = useState('')
 
-    return (
-            <>
-                <JoditEditor
-                    ref={editor}
-                    value={textContent.text}
-                    config={config}
-                    onChange={(content) => setValue(content)} 
-                />
-            </>
-        );
+  const config = {
+    readonly: false,
+  };
+
+  const handleChange = (newContent: string) => {
+    setContent(newContent);
+  };
+
+  function name() {
+    var sayName = 'olá tatá'
+    console.log(sayName)
+    return true;
+  }
+
+  console.log(name());
+  console.log(name());
+  console.log(name());
+
+  // console.log(content, 'text')
+
+  const sendText = async () => {
+    
+  };  
+  return (
+    <>
+      <JoditEditor ref={editor} config={config} onBlur={handleChange} value={''} />         
+      <Button buttonName='Enviar' handleClick={sendText}/>
+    </>
+)
 }
-
-export default TextEditor;
+export default Editor
