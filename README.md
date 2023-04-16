@@ -48,3 +48,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 4. Execute the `prisma migrate` command
 `cd prisma`
 `npx prisma migrate reset` 
+ `npx prisma migrate dev --name init`

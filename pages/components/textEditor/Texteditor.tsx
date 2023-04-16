@@ -17,17 +17,25 @@ const Editor = () => {
     setContent(newContent);
   };
 
-  console.log(content, 'text')
+  const sendText = async (event) => {
+    /**
+     * Fazer validação do front end aqui!
+     */
+    event.preventDefault();
+    
+    const data = {
+      text: content
+    }
 
-  const sendText = async ( /*e: { preventDefault: any; } */) => {
     try {
       const url = '/api/journalentry';
       const response = await axios.post(url, data);
       console.log(response.data);
     } catch (error) {
-      console.error(error);
+      console.error(error.response.data.data);
     }
   };  
+
   return (
     <>
       <JoditEditor ref={editor} config={config} onBlur={handleChange} value={''} />         
