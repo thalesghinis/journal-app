@@ -10,7 +10,7 @@ export default function Navbar(){
     return(
         <StyledHeader className="header relative flex items-center justify-between">
             <p>
-                <span className="b">J</span>
+                <span className="b">Journal App</span>
             </p>
 
             <input type="checkbox" id="menu_bar" className="dn"/>
