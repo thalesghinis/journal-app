@@ -4,9 +4,10 @@ export const StyledHeader = styled.header`
     padding: 0 7em;
     z-index: 1000;
     color: #03395d;
+    height: 90px;
     
     span {
-        font-size: 5em;
+        font-size: 2em;
     }
 
     label{

@@ -12,6 +12,8 @@ const createHash = (password) => {
  * 
  * @param {*} userEmail 
  * @param {*} userPassword 
+ * @param {*} setText 
+
  * @returns 
  */
 export const findUser = async (userEmail, userPassword) => {
@@ -36,7 +38,7 @@ export const findUser = async (userEmail, userPassword) => {
  * @param {String} userEmail 
  * @returns 
  */
-export const findUserWithEmail = async (userEmail) => {
+export const  findUserWithEmail = async (userEmail) => {
     const user = await prisma.user.findFirst({
         where: {
             email: userEmail,
@@ -54,6 +56,22 @@ export const createUser = async (userEmail, userPassword, userName) => {
             email: userEmail,
             password: createHash(userPassword),
             name: userName,
+        }
+    });
+}
+
+/**
+ * 
+ * @param {*} setText 
+
+ * @returns 
+ */
+
+export const sendText = async (setText) => {
+
+    return await prisma.journalEntry.create({
+        data: {
+            text: setText,
         }
     });
 }
